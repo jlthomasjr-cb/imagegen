@@ -16,9 +16,8 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 const predict = async function () {
     const response = await openai.createImage({
-        prompt: "colorful crayon sketch of small blocks connected with chain in a planetary way",
+        prompt: "pastel sketch of small blocks connected with chain in a planetary way",
         n: 1,
-        //size: "256x256",
         size: "1024x1024",
         response_format: 'b64_json',
     });
@@ -45,17 +44,19 @@ predict()
                     .in('-page', '+0+0')  // location of the image
                     .in(filename).resize(1000, 563, "!")
                     .in('-page', '+0+0')
-                    .in('layers/CoinaversaryNFTimage_HP_0006_Frame.png')
+                    .in('layers/CoinaversaryNFTimage_HP_0007_Frame.png')
                     .in('-page', '+0+0')
-                    .in('layers/CoinaversaryNFTimage_HP_0005_Yellowdot.png')
+                    .in('layers/CoinaversaryNFTimage_HP_0006_Yellowdot.png')
                     .in('-page', '+0+0')
-                    .in('layers/CoinaversaryNFTimage_HP_0003_Coinaversary.png')
+                    .in('layers/CoinaversaryNFTimage_HP_0004_Coinaversary.png')
                     .in('-page', '+0+0')
-                    .in('layers/CoinaversaryNFTimage_HP_0004_Standwithcrypto.png')
+                    .in('layers/CoinaversaryNFTimage_HP_0005_Standwithcrypto.png')
                     .in('-page', '+0+0')
-                    .in('layers/CoinaversaryNFTimage_HP_0002_CBlogo.png')
+                    .in('layers/CoinaversaryNFTimage_HP_0003_CBlogo.png')
                     .in('-page', '+0+0')
-                    .in('layers/CoinaversaryNFTimage_HP_0001_Wdphoto.png')
+                    .in('layers/CoinaversaryNFTimage_HP_0002_Wdphoto.png')
+                    .in('-page', '+0+0')
+                    .in('layers/CoinaversaryNFTimage_HP_0001_Title.png')
                     .in('-page', '+0+0')
                     .in('layers/CoinaversaryNFTimage_HP_0000_Date.png')
                     .mosaic()  // Merges the images as a matrix
